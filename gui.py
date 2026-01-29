@@ -16,7 +16,7 @@ class DSP_Backend:
     def __init__(self, fs=360):
         self.fs = fs
         self.scaler = MinMaxScaler()
-        self.classifier = KNeighborsClassifier(n_neighbors=5)
+        self.classifier = KNeighborsClassifier(n_neighbors=2)
         self.is_trained = False
 
     def load_data(self, file_path):
